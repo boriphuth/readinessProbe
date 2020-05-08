@@ -7,7 +7,7 @@ spec:
   selector:
     app: *service-name
   ports:
-    - name: grpc
+    - name: http
       port: 10000
       nodePort: 30900
       protocol: TCP
