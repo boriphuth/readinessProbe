@@ -23,7 +23,7 @@ spec:
         image: emailtovamos/readinessprobe:v1
         command: ["./binary"]
         readinessProbe:
-          httpGet:
+          httpGet: # Probe type. It can be http, command or tcp
             path: /up
             port: 10000
           initialDelaySeconds: 1

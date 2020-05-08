@@ -15,7 +15,6 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func handleRequests() {
-
 	ready := &atomic.Value{}
 	ready.Store(0)
 	h := NewReadyHandler(ready)
